@@ -1,97 +1,76 @@
-/* Estilo Geral */
+/* Corpo do site */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #000; /* Fundo preto */
-    color: #fff; /* Texto branco */
+    background-color: #121212; /* Fundo escuro */
+    color: #f0f0f0; /* Texto claro */
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #0044cc; /* Fundo azul */
+    background-color: #1f1f1f; /* Fundo do cabeçalho */
     padding: 20px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
 }
 
 header h1 {
-    margin: 0;
-    color: #fff; /* Título branco */
+    color: #4CAF50; /* Verde vibrante */
+    font-size: 2.5rem;
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-header nav ul li {
-    display: inline;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 10px;
-    border: 2px solid transparent;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-header nav ul li a:hover {
-    border-color: #fff; /* Destaque no hover */
-}
-
-/* Seções */
+/* Seções principais */
 main {
-    margin: 20px auto;
     max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
 }
 
-section {
-    background-color: #222; /* Fundo cinza escuro */
-    padding: 15px;
-    margin: 20px 0;
+/* Cada filme */
+.movie {
+    background-color: #1e1e1e; /* Fundo de cada seção */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra */
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
 
-section h2 {
-    color: #0044cc; /* Títulos em azul */
+/* Título dos filmes */
+.movie h2 {
+    color: #4CAF50; /* Verde */
+    font-size: 1.8rem;
     margin-bottom: 10px;
 }
 
-section p {
-    line-height: 1.6;
+/* Conteúdo dos filmes */
+.movie-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-section img {
-    width: 100%; /* Imagem responsiva */
-    max-height: 300px; /* Limita altura da imagem */
-    object-fit: cover;
-    border-radius: 8px;
-    margin: 10px 0;
+/* Imagens */
+.movie-content img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+/* Texto */
+.movie-content p {
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 /* Rodapé */
 footer {
     text-align: center;
-    background-color: #0044cc; /* Fundo azul */
-    color: #fff; /* Texto branco */
-    padding: 10px;
-    margin-top: 20px;
+    padding: 15px;
+    background-color: #1f1f1f;
+    color: #f0f0f0;
+    font-size: 0.9rem;
+    border-top: 2px solid #4CAF50;
 }
 
-footer a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover {
-    text-decoration: underline; /* Destaque no hover */
-}
