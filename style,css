@@ -1,0 +1,16 @@
+/* Estilo geral */
+body {
+    background-color: #f0f0f0; /* Fundo claro */
+    color: #333; /* Texto escuro */
+}
+
+/* Estilo do título */
+h1 {
+    color: #4CAF50; /* Título verde */
+    text-align: center; /* Centralizado */
+}
+
+/* Estilo do parágrafo */
+p {
+    font-family: Arial; /* Fonte simples */
+}
